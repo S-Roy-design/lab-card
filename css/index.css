@@ -1,0 +1,47 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+
+}
+
+.card-container {
+    width: 20em;
+    background-color: red;
+    border: 4 em solid black;
+    border-radius: 3em;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* check for image width from Rocco's video | for now width is AUTO*/
+
+.property-image {
+    width: auto;
+}
+
+.room-icons{
+    width: 2em;
+}
+
+.make-strong-uppercase {
+    text-transform:uppercase;
+    font-weight: 700;
+}
+
+.overview-info {
+    background-color: white;
+}
+
+.inhouse-units{
+    background-color: white;
+    margin: 1em;
+    border-bottom: 1 em solid black;
+}
+
+.contact{
+    background-color: lightgray;
+    margin: 1em;
+}

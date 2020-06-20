@@ -22,26 +22,63 @@ img {
     width: auto;
 }
 
-.room-icons{
-    width: 2em;
+.insert-bulletpoint {
+    list-style-type: disc;
 }
 
-.make-strong-uppercase {
+.room-icons{
+    width: 2em;
+    padding-right: 0.5em;
+}
+
+.make-uppercase {
     text-transform:uppercase;
+}
+
+.make-strong {
     font-weight: 700;
+    padding-right: 0.5em; /* Could have made a class for this, but due to fwe use cases thought it suffcient */
+}
+
+.make-large {
+    font-size: large;
+}
+
+.make-small {
+    font-size: small; /* Not completely satisfied with the text-size */
 }
 
 .overview-info {
     background-color: white;
+    padding-left: 1em;
 }
 
-.inhouse-units{
+.inhouse-units {
     background-color: white;
-    margin: 1em;
-    border-bottom: 1 em solid black;
+    /* margin: 1em; */
+    /* border-bottom: 1 em solid black; */
 }
 
-.contact{
+.rooms {
+    list-style-type: none;
+    padding-inline-start: 1em;
+    /* margin-block-start: 1em;
+    margin-block-end: 1em; */
+}
+
+.contact {
     background-color: lightgray;
-    margin: 1em;
+    padding-left: 1em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+
+    /* margin-block-start: 0em;     Put these here because I wanted the paragraphs block elements to reset their margin properties but that probably got overuled becuase the block elements came later
+    margin-block-end: 0em; */
+
+    
+}
+
+.reduce-margin {
+    margin-block-start: 0.25em;
+    margin-block-end: 0.5em;
 }

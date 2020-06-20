@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -6,8 +8,9 @@ body {
 
 .card-container {
     width: 20em;
-    background-color: red;
-    border: 4 em solid black;
+    height: auto;
+    background-color: white;
+    border: 0.125em solid black;
     border-radius: 3em;
     margin: 0 auto;
 }
@@ -29,6 +32,7 @@ img {
 .room-icons{
     width: 2em;
     padding-right: 0.5em;
+    /* padding-top: 2em; */
 }
 
 .make-uppercase {
@@ -37,11 +41,18 @@ img {
 
 .make-strong {
     font-weight: 700;
-    padding-right: 0.5em; /* Could have made a class for this, but due to fwe use cases thought it suffcient */
+    /* padding-right: 0.5em;  Could have made a class for this, but due to few use cases thought it suffcient to have it combined */
 }
 
+.padding-right {
+    padding-right: 0.5em;
+}
 .make-large {
     font-size: large;
+}
+
+.make-xxlarge {
+    font-size:xx-large;
 }
 
 .make-small {
@@ -55,6 +66,10 @@ img {
 
 .inhouse-units {
     background-color: white;
+    /* padding-top: 0.25em;
+    padding-bottom: 0.25em; */
+    border-top: 0.125em solid black;
+    border-bottom: 0.125em solid black;
     /* margin: 1em; */
     /* border-bottom: 1 em solid black; */
 }
@@ -80,5 +95,41 @@ img {
 
 .reduce-margin {
     margin-block-start: 0.25em;
+    margin-block-end: 1em;
+}
+
+.reduce-margin-equal {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.reduce-margin-address {
+    margin-block-start: 0.5em;
+    margin-block-end: 1em;
+}
+
+.reduce-margin-housetype {
+    margin-block-start: 1em;
     margin-block-end: 0.5em;
+}
+
+/* .inline-display {
+    display: inline;
+} */
+
+.floater {
+    float: right;
+}
+
+.reduce-left-padding {
+    padding-left: 0;
+}
+
+.shift-left {
+    padding-right: 5.5em;
+}
+
+/* Wanted to push down the image by wrapping it with a span (NOT WORKING) */
+.push-down {
+    padding-bottom: 3em;  
 }

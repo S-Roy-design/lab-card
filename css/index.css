@@ -9,9 +9,9 @@ body {
 .card-container {
     width: 20em;
     height: auto;
-    background-color: white;
-    border: 0.125em solid black;
-    border-radius: 3em;
+    background-color:#ffffff;
+    /* border: 0.125em solid transparent;         Thought a border radius would work but it the other classes coming later overrules it
+    border-radius: 1em;                             */
     margin: 0 auto;
 }
 
@@ -25,14 +25,26 @@ img {
     width: auto;
 }
 
+.setup {
+    display: block;
+    border-bottom: 0.5em solid transparent;
+    border-radius: 0.5em;
+}
+
 .insert-bulletpoint {
     list-style-type: disc;
 }
 
 .room-icons{
     width: 2em;
+    /* margin-top: 1em;    Did not work to push down the images*/
     padding-right: 0.5em;
-    /* padding-top: 2em; */
+    margin-right: 0.5em;
+/* padding-top: 2em;       Did not work to push down the images*/
+}
+
+.block-display {
+    display: block;
 }
 
 .make-uppercase {
@@ -45,7 +57,7 @@ img {
 }
 
 .padding-right {
-    padding-right: 0.5em;
+    padding-right: 0.25em;
 }
 .make-large {
     font-size: large;
@@ -60,37 +72,56 @@ img {
 }
 
 .overview-info {
-    background-color: white;
+    background-color: #ffffff;
     padding-left: 1em;
 }
 
+.overview-title-color {
+    color: #4c5666;
+}
+
+.overview-address-color {
+    color: #4c5666;v
+}
+
 .inhouse-units {
-    background-color: white;
+    background-color: #ffffff;
     /* padding-top: 0.25em;
     padding-bottom: 0.25em; */
-    border-top: 0.125em solid black;
-    border-bottom: 0.125em solid black;
+    border-top: 0.0625em solid #e3e8ef;
+    border-bottom: 0.0625em solid #e3e8ef;
     /* margin: 1em; */
     /* border-bottom: 1 em solid black; */
 }
 
 .rooms {
     list-style-type: none;
-    padding-inline-start: 1em;
+    padding-left: 1em;
     /* margin-block-start: 1em;
     margin-block-end: 1em; */
 }
 
+.room-font-color {
+    color: #4c5666;
+}
+
 .contact {
-    background-color: lightgray;
+    background-color: #f8fafc;
     padding-left: 1em;
     padding-top: 0.25em;
     padding-bottom: 0.25em;
+    border-bottom: 0.5em solid transparent;
+    border-radius: 0 0 0.5em 0.5em;
 
     /* margin-block-start: 0em;     Put these here because I wanted the paragraphs block elements to reset their margin properties but that probably got overuled becuase the block elements came later
     margin-block-end: 0em; */
+}
+.title-color{    
+    color: #748194;
+}
 
-    
+.phone-no-color{
+    color: #4c5666;
 }
 
 .reduce-margin {
@@ -133,3 +164,14 @@ img {
 .push-down {
     padding-bottom: 3em;  
 }
+
+.button {
+    display: block;
+    background-color: orange;
+    padding: 0.5em;
+    border: 1em solid blue;
+    border-radius: 1em;
+    text-align: center;
+}
+
+
